@@ -1,0 +1,41 @@
+<!-- Estrutura da coluna ou newsletter -->
+<div class="newsletter">
+    <!-- Conteúdo da coluna -->
+    <div class="column">
+        <h2>Título da Newsletter</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod euismod ex, ac consectetur arcu laoreet in. Nulla facilisi. Sed auctor vel augue ut cursus. Nunc congue, leo id volutpat vestibulum, arcu elit tincidunt justo, id euismod nisi orci eget justo.</p>
+        <p>Suspendisse potenti. Pellentesque ut tincidunt ligula. Vestibulum vitae congue neque. Vivamus in bibendum ex. Nullam nec dolor eu dui pellentesque iaculis. Quisque ut ex sit amet purus laoreet fermentum.</p>
+        
+    </div>
+</div>
+
+
+<!-- Lista de itens -->
+<div class="rev">
+    
+    <form class="add-plus" method="post" action="/create">
+        <input  placeholder="Digite seu comentário"  type="text" name="item" required>
+        <button type="submit">
+            <div class="button-container">
+                <img class="img-1" src="/imgs/plus.png" alt="Adicionar" title="Adicionar">
+            </div>
+        </button>
+    </form>
+</div>
+
+<ul>
+    {{#each items}}
+    <li>
+        {{this}}
+        <a href="/delete/{{@index}}">Excluir</a>
+        <a href="/edit/{{@index}}">Editar</a>
+    </li>
+    {{/each}}
+</ul>
+
+
+
+
+
+</div> 
+

@@ -1,0 +1,391 @@
+/* Estilo geral */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  background-color: #000;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+/* Estilo do cabeçalho (header) */
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 25px 0;
+  padding-right: 12px;
+}
+
+nav {
+  
+  text-align: center;
+}
+
+.gugu-left {
+  color: #FA7C00;;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 10px; 
+  float: left;
+}
+
+
+
+
+/* Estilo da navegação (navbar) */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav a {
+  color: #FA7C00;;
+  position: relative;
+  
+}
+
+nav a:not(.gugu-left)::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #FA7C00;;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+nav a:not(.gugu-left):hover::after {
+  width: 100%;
+}
+
+nav li {
+  display: inline;
+  margin: 0 10px;
+  margin-left: 10px;
+}
+
+/* Estilo do conteúdo principal (main) */
+main {
+  background-color: #000;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+/* Estilo padrão para o ul e li */
+/* Estilo padrão para o ul e li */
+ul {
+list-style-type: none;
+padding: 0;
+text-align: center; /* Centralize o texto dentro do ul */
+display: flex;
+flex-direction: column; /* Empilhe os itens verticalmente */
+justify-content: center; /* Centralize verticalmente os itens no meio do ul */
+align-items: center; /* Centralize horizontalmente os itens no meio do ul */
+}
+li {
+list-style-type: none;
+background-color: #000;
+color: #FA7C00;
+font-weight: bold;
+border-radius: 10px;
+border: 3px solid #FA7C00;
+padding: 15px;
+
+max-width: 300px;
+text-align: left; /* Centralize o texto dentro de cada item */
+}
+
+a {
+text-decoration: none;
+color: #FA7C00;
+font-weight: bold;
+margin: 5px 0;
+}
+
+
+.input-update{
+  display: grid;
+  place-items: center;
+  max-width: 200px;
+  border-radius: 10px;
+  border: 3px solid #FA7C00;
+  margin: 0;
+  color: #FA7C00;
+  background-color: #000;
+  margin-right: auto;
+  width: 15rem;
+  padding: 10px; /* Adiciona espaço interno para melhorar a aparência */
+  font-size: 16px; /* Define o tamanho da fonte */
+  outline: none; /* Remove a borda de foco padrão */
+  
+}
+
+.div-pai-edit h1 {
+  color: #FA7C00
+}
+
+.div-pai-edit button {
+  width: 20px;
+  background-color: #000;
+}
+
+.div-pai-edit{
+  margin-top: 8rem;
+  display: grid;
+  place-items: center;
+}
+
+
+
+.css-nav {
+  font-weight: bold;
+  font-size: 1rem;
+  color: black;
+}
+a {
+  color: #FA7C00;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  width: 25rem;
+  height: 4rem;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #333;
+  color: #FA7C00;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-plus {
+  display: flex;
+  align-items: center;
+}
+
+.add-plus button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+
+.rev {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100%; /* 100% da altura do elemento pai (garante que a div se ajuste ao conteúdo) */
+}
+
+
+
+.add-plus input[type="text"] {
+  border-radius: 10px;
+  border: 3px solid #FA7C00;
+  margin: 0;
+  color: #FA7C00;
+  background-color: #000;
+  margin-right: auto;
+  width: 15rem;
+  padding: 10px; /* Adiciona espaço interno para melhorar a aparência */
+  font-size: 16px; /* Define o tamanho da fonte */
+  outline: none; /* Remove a borda de foco padrão */
+  transition: border-color 0.3s ease-in-out; /* Adiciona uma animação suave para a mudança de cor da borda */
+}
+
+/* Estilo da borda quando o campo está em foco */
+.add-plus input[type="text"]:focus {
+  border-color: #FA7C00; /* Define a cor da borda quando o campo está em foco */
+}
+
+.add-plus input::placeholder {
+  color: #FA7C00; /* Cor do placeholder padrão */
+  text-align: left;
+  font-weight: bold; /* Negrito (opcional) */
+  padding-left: 1rem;
+  opacity: 1; /* Define a transparência inicial */
+  transition: opacity 0.3s ease-in-out; /* Adiciona uma animação suave de 0.3 segundos */
+}
+
+.add-plus input:focus::placeholder {
+  color: #FA7C00; /* Cor do placeholder quando o campo está em foco */
+  opacity: 1.5;
+}
+
+.constru {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 18rem;
+  align-items: center;
+  text-align: center;
+  color: #FA7C00
+}
+
+
+/* Estilo do rodapé (footer) */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
+  color: #FA7C00;;
+  text-align: center;
+  padding: 2px 0;
+}
+
+/* Estilo para a estrutura da coluna ou newsletter */
+.newsletter {
+display: flex; /* Use um layout flexível para alinhar a coluna */
+justify-content: center; /* Centralize a coluna horizontalmente */
+align-items: center; /* Centralize a coluna verticalmente */
+margin-bottom: 20px; /* Adicione margem na parte inferior, se necessário */
+}
+
+/* Estilo para a coluna */
+.column {
+width: 55rem;
+padding-top: 30px;
+text-align: center; /* Centralize o conteúdo da coluna */
+padding: 20px; /* Adicione preenchimento para dar espaço interno */
+background-color: #f0f0f0; /* Cor de fundo da coluna */
+border: 1px solid #ddd; /* Borda da coluna, opcional */
+}
+
+.add-plus button {
+display: inline-block; /* Torna o botão e a imagem inline */
+vertical-align: middle; /* Alinha verticalmente ao centro */
+}
+
+
+
+.image {
+padding-top: 20px;
+width: 400px; /* Largura desejada */
+height: 200px; /* Altura fixa */
+}
+
+.alinhamento {
+text-align: center;
+}
+
+/* Estilos para telas menores (dispositivos móveis) */
+@media screen and (max-width: 768px) {
+main {
+  background-color: #000;
+  padding: 20px;
+  margin-bottom: 70px; /* Adicione margem inferior para acomodar o footer */
+}
+
+li {
+  max-width: 100%; /* Largura total para as li's */
+  margin-left: 0; /* Remova a margem esquerda para centralizar horizontalmente */
+}
+
+/* Estilo do rodapé (footer) */
+footer {
+position: fixed;
+bottom: 0;
+left: 0;
+right: 0;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 50px;
+margin-top: 20px; /* Adicione a margem superior desejada */
+}
+
+/* Reduza o tamanho da fonte ou ajuste outros estilos do texto conforme necessário */
+footer p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+.rapido {
+  
+  text-align: center; /* Centralize o texto dentro da classe .rapido */
+}
+
+.add-plus {
+  flex-direction: row; /* Altera a direção do flex para linha (horizontal) */
+  justify-content: center; /* Centralize o conteúdo horizontalmente */
+}
+
+.button-container {
+  margin-left: 10px; /* Adicione margem à esquerda para separar o input e a imagem */
+}
+}
+
+/* Ajuste o input */
+input[type="text"] {
+  width: 80%; /* Defina a largura desejada, por exemplo, 80% */
+  margin-left: auto; /* Centralize o input horizontalmente */
+  margin-right: auto;
+  margin: 5px 0; /* Adicione margem vertical entre o input e outros elementos */
+}
+
+/* Ajuste a imagem */
+.add-plus img {
+  margin-left: 8px;
+  max-width: 100%; /* Ajuste a largura da imagem para que ela se ajuste à tela */
+}
+
+
+
+.column {
+  margin-top: 10px; /* Ajuste a margem superior conforme necessário */
+  padding-top: 30px;
+  text-align: center;
+  padding: 20px;
+  color: #FA7C00;
+  background-color: #000;
+  border-radius: 15px;
+  border: 2px solid #FA7C00;
+}
+
+ul {
+list-style-type: none; /* Remova os marcadores padrão da lista, se houver */
+padding: 0; /* Remova o preenchimento padrão da lista */
+
+}
+
+ul li {
+vertical-align: top; /* Alinhe todos os elementos <li> na parte superior */
+margin-bottom: 15px; /* Remova a margem inferior */
+width: 80%;
+
+}
+
+ul li a {
+display: block; /* Torne os links elementos de bloco */
+
+}
+
